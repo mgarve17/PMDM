@@ -21,6 +21,7 @@ import android.widget.Button
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -33,6 +34,9 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Build
+import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ElevatedButton
@@ -157,12 +161,12 @@ fun BotonElevado6(s: String, sp: TextUnit){
 }
 
 @Composable
-fun Espacio(dp: Dp){
+fun Espacio(dp: Dp){//función para espaciar verticalmente los botones
 
     Spacer(modifier = Modifier.height(dp))
 }
  @Composable
- fun BotonIcono6(){
+ fun BotonNormalIcono7(){
 
      IconButton( onClick = {/*TODO*/}) {
 
@@ -177,18 +181,31 @@ fun Espacio(dp: Dp){
      }
  }
 
-//@Composable
-//fun Fila(){
-//
-//    Row(){
-//        BotonIcono(Icons.Filled.Build, "Icono Configurar")
-//        Espacio(4.dp)
-//
-//    }
-//}
+@Composable
+fun Fila(){
+
+    Row(){
+        BotonIcono(Icons.Filled.Build, "Icono Configurar")
+        Espacio(4.dp)
+        BotonIcono(Icons.Filled.AccountCircle, "cuenta de usuario")
+        Espacio(4.dp)
+        BotonIcono(Icons.Filled.Email, "Mail de usuario")
+        Espacio(4.dp)
+        BotonIcono(Icons.Filled.Phone, "Telefono")
+        Espacio(8.dp)
+        BotonIcono(Icons.Filled.Info, "Informacion")
+    }
+}
 @Composable
 fun BotonIcono(build: ImageVector, s: String){
 
+    IconButton( onClick = {Log.d("PRUEBAS", "Has pulsado $s")},
+        modifier = Modifier.size(50.dp)
+    ) {
+
+        Icon(build, contentDescription = s, tint = Color.red,
+            modifier = Modifier.fillMaxSize())
+    }
 }
 
 

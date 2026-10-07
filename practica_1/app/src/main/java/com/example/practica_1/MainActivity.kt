@@ -55,7 +55,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DiarioAstroturistaApp(){
 //1. DECLARACION DE VARIABLES DE ESTADO
-    var nombreExplorador by remember{ mutableStateOf("") }
+    var nombreExplorador by remember{ mutableStateOf("") }//para recordar los cambios
     var entradaRegistro by remember{mutableStateOf("")}
     var colorTema by remember { mutableStateOf(Color.Gray) }
 
@@ -126,7 +126,7 @@ fun DiarioAstroturistaApp(){
                 modifier = Modifier.fillMaxWidth().background(Color.Black).padding(8.dp),
                 color = Color.White,
                 onTextLayout = { textLayoutResult ->
-                    val lineas = textLayoutResult.lineCount
+                    val lineas = textLayoutResult.lineCount//variables para mostrar en el log cuanto ocupo y si hubo overflow
                     val desbordamiento = textLayoutResult.hasVisualOverflow
                     Log.d(TAG, "Líneas: $lineas | Desbordamiento: $desbordamiento")
                 }
@@ -197,18 +197,4 @@ fun BotonPersonalizado(
             Text(text = texto)
         }
     }
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Practica_1Theme {
-        Greeting("Android")
-    }
-}

@@ -126,6 +126,7 @@ fun HomeView(){
             Button(onClick = {
                 coroutineScope.launch {
                     timerJob?.cancel()
+                    //timerValue = 60
                 }
             }) {
                 Text("DETENER")

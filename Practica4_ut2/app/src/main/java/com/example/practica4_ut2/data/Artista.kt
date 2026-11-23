@@ -25,7 +25,7 @@ object RepositorioArtistas{
             estilo = "Kpop",
             anioInicio = "2018",
             biografia = "Las mejores que vuelvan las extraño con la fuerza de mil soles",
-            imagenUrl = "https://commons.wikimedia.org/wiki/File:190517_Loona_for_TenAsia.png"
+            imagenUrl = "https://commons.wikimedia.org/wiki/Special:FilePath/190517_Loona_for_TenAsia.png?width=600"
         ),
 
         Artista(
@@ -37,7 +37,7 @@ object RepositorioArtistas{
             estilo = "Pop/Folk",
             anioInicio = "2018",
             biografia = "Es mi mejor amiga y lo sabe",
-            imagenUrl = "https://commons.wikimedia.org/wiki/File:Clairo_@_Fonda_Theatre_09_08_2024_(54012644985).jpg"
+            imagenUrl = "https://commons.wikimedia.org/wiki/Special:FilePath/Clairo_@_Fonda_Theatre_09_08_2024_(54012644985).jpg?width=600"
 
         ),
         Artista(
@@ -49,7 +49,7 @@ object RepositorioArtistas{
             estilo = "Pop rock",
             anioInicio = "2021",
             biografia = "qué guapa está dublin in ecstasy",
-            imagenUrl = "https://commons.wikimedia.org/wiki/File:NDLE2022Inhaler_04.jpg"
+            imagenUrl = "https://commons.wikimedia.org/wiki/Special:FilePath/NDLE2022Inhaler_04.jpg?width=600"
         ),
 
         Artista(
@@ -61,7 +61,7 @@ object RepositorioArtistas{
             estilo = "Pop rock",
             anioInicio = "2017",
             biografia = "miau",
-            imagenUrl = "https://commons.wikimedia.org/wiki/File:Wallows_new_profile_picture_for_Wikipedia_(anytime,always_wallows_2024).png"
+            imagenUrl = "https://commons.wikimedia.org/wiki/Special:FilePath/Wallows_new_profile_picture_for_Wikipedia_(anytime,always_wallows_2024).png?width=600"
         )
     )
 

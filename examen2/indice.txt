@@ -1,0 +1,10 @@
+1. lazyrom, lazycolumn, 
+2. estructura y scaffold, topbar, bottombar, floationg actionbutton, snackbarhost, fondo dinamico, listas desplazables, tarjetas
+3. Scaffold  
+4. navegación entre pantallas
+5. parámetros entre vistas
+6. contador con model view viewmodel
+7. usar el patrón mvvm
+8. imageVector, Painter para app de música
+9. radiobuttons, estados y encuestas de app de musica
+10. menú desplegable
